@@ -1,0 +1,10 @@
+.header {
+    position: relative;
+}
+
+.header__background {
+    background-image: url(/img/hero-background.jpg);
+    background-size: cover;
+    background-position: 80%;
+    height: 90vh;
+}
