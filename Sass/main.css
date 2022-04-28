@@ -11,9 +11,23 @@
   padding: 0;
 }
 
+html {
+  font-size: 100%;
+}
+
 body {
   color: #DAF6F9;
   font-family: 'Jost', sans-serif;
+}
+
+.subsection-heading {
+  display: block;
+  padding: 1rem 0;
+  background-color: #002D33;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 300;
+  letter-spacing: 0.1rem;
 }
 
 .header {
@@ -21,10 +35,91 @@ body {
 }
 
 .header__background {
-  background-image: url(/img/hero-background.jpg);
+  background: -webkit-gradient(linear, left top, right bottom, from(rgba(1, 150, 152, 0.6)), to(rgba(0, 45, 51, 0.5))), url(/img/hero-background.jpg);
+  background: linear-gradient(to right bottom, rgba(1, 150, 152, 0.6), rgba(0, 45, 51, 0.5)), url(/img/hero-background.jpg);
   background-size: cover;
-  background-position: 80%;
+  background-position: center;
+  -webkit-transform: rotateZ(180deg);
+          transform: rotateZ(180deg);
   height: 90vh;
+}
+
+.header__heading-primary {
+  position: absolute;
+  top: 10rem;
+  left: 8rem;
+  font-family: 'Megrim', cursive;
+  font-weight: 500;
+  letter-spacing: 1rem;
+  font-size: 4rem;
+}
+
+.header__heading-secondary {
+  position: absolute;
+  top: 15.5rem;
+  left: 8rem;
+  font-family: 'Jost', sans-serif;
+  font-size: 2rem;
+  font-weight: 200;
+  letter-spacing: 0.35rem;
+}
+
+.header__buttons--about {
+  position: absolute;
+  top: 20rem;
+  left: 8rem;
+  padding: 0.5rem 1rem;
+  border-radius: 3px;
+  background: -webkit-gradient(linear, left top, right bottom, from(rgba(155, 2, 129, 0.7)), to(rgba(114, 1, 93, 0.7)));
+  background: linear-gradient(to right bottom, rgba(155, 2, 129, 0.7), rgba(114, 1, 93, 0.7));
+  -webkit-box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+          box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+  text-align: center;
+  -webkit-transition: 200ms all ease-in-out;
+  transition: 200ms all ease-in-out;
+}
+
+.header__buttons--about, .header__buttons--about:link, .header__buttons--about:visited {
+  color: white;
+  text-decoration: none;
+}
+
+.header__buttons--about:hover {
+  background: -webkit-gradient(linear, left top, right bottom, from(rgba(155, 2, 129, 0.8)), to(rgba(114, 1, 93, 0.8)));
+  background: linear-gradient(to right bottom, rgba(155, 2, 129, 0.8), rgba(114, 1, 93, 0.8));
+  -webkit-transform: translateY(1px);
+          transform: translateY(1px);
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.header__buttons--contact {
+  position: absolute;
+  top: 20rem;
+  left: 17rem;
+  padding: 0.5rem 1rem;
+  border-radius: 3px;
+  background: -webkit-gradient(linear, left top, right bottom, from(rgba(155, 2, 129, 0.7)), to(rgba(114, 1, 93, 0.7)));
+  background: linear-gradient(to right bottom, rgba(155, 2, 129, 0.7), rgba(114, 1, 93, 0.7));
+  -webkit-box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+          box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+  text-align: center;
+  -webkit-transition: 200ms all ease-in-out;
+  transition: 200ms all ease-in-out;
+}
+
+.header__buttons--contact, .header__buttons--contact:link, .header__buttons--contact:visited {
+  color: white;
+  text-decoration: none;
+}
+
+.header__buttons--contact:hover {
+  background: -webkit-gradient(linear, left top, right bottom, from(rgba(155, 2, 129, 0.8)), to(rgba(114, 1, 93, 0.8)));
+  background: linear-gradient(to right bottom, rgba(155, 2, 129, 0.8), rgba(114, 1, 93, 0.8));
+  -webkit-transform: translateY(1px);
+          transform: translateY(1px);
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .navigation__checkbox {
@@ -32,25 +127,34 @@ body {
 }
 
 .navigation__button {
-  background-color: #DAF6F9;
-  height: 7rem;
-  width: 7rem;
+  background: radial-gradient(#daf6f9, rgba(218, 246, 249, 0.2));
+  -webkit-box-shadow: 0 0 0.5rem #daf6f9;
+          box-shadow: 0 0 0.5rem #daf6f9;
+  height: 4rem;
+  width: 4rem;
   position: fixed;
-  top: 6rem;
-  right: 6rem;
+  top: 4.5rem;
+  right: 4.5rem;
   border-radius: 50%;
   z-index: 2000;
   text-align: center;
+  -webkit-transition: 200ms all ease-in-out;
+  transition: 200ms all ease-in-out;
   cursor: pointer;
 }
 
+.navigation__button:hover {
+  -webkit-transform: translateY(1px);
+          transform: translateY(1px);
+}
+
 .navigation__background {
-  height: 6rem;
-  width: 6rem;
+  height: 4rem;
+  width: 4rem;
   border-radius: 50%;
   position: fixed;
-  top: 6.5rem;
-  right: 6.5rem;
+  top: 4.5rem;
+  right: 4.5rem;
   background-image: radial-gradient(#002D33 20%, #DAF6F9 80%);
   z-index: 1000;
   -webkit-box-shadow: 0 1rem 3rem rgba(1, 14, 20, 0.1);
@@ -92,7 +196,7 @@ body {
   display: inline-block;
   font-size: 3rem;
   font-weight: 300;
-  color: #DAF6F9;
+  color: rgba(218, 246, 249, 0.6);
   text-decoration: none;
   text-transform: uppercase;
   -webkit-transition: 400ms all ease-in-out;
@@ -102,8 +206,8 @@ body {
 .navigation__link:hover, .navigation__link:active {
   background-position: 100%;
   color: #9B0281;
-  -webkit-transform: translateY(0.25rem);
-          transform: translateY(0.25rem);
+  -webkit-transform: translateY(0.1rem);
+          transform: translateY(0.1rem);
 }
 
 .navigation__checkbox:checked ~ .navigation__background {
@@ -118,13 +222,13 @@ body {
 
 .navigation__icon {
   position: relative;
-  margin-top: 3.5rem;
+  margin-top: 2rem;
 }
 
 .navigation__icon, .navigation__icon::before, .navigation__icon::after {
-  width: 3rem;
-  height: 3px;
-  background-color: #010E14;
+  width: 1.75rem;
+  height: 2px;
+  background-color: #002D33;
   display: inline-block;
 }
 
