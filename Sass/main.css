@@ -42,6 +42,10 @@ body {
   margin-bottom: 2rem;
 }
 
+.u-text-align-right {
+  text-align: right;
+}
+
 .btn-primary {
   padding: 0.5rem 1rem;
   border-radius: 3px;
@@ -69,6 +73,7 @@ body {
 }
 
 .btn-secondary {
+  display: inline-block;
   padding: 0.5rem 1rem;
   border-radius: 3px;
   background: -webkit-gradient(linear, left top, right bottom, from(rgba(1, 150, 152, 0.7)), to(rgba(2, 92, 103, 0.7)));
@@ -76,8 +81,8 @@ body {
   -webkit-box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
           box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
   text-align: center;
-  -webkit-transition: 500ms all ease-in-out;
-  transition: 500ms all ease-in-out;
+  -webkit-transition: 200ms all ease-in-out;
+  transition: 200ms all ease-in-out;
 }
 
 .btn-secondary, .btn-secondary:link, .btn-secondary:visited {
@@ -114,8 +119,8 @@ body {
   -webkit-box-shadow: 0 0 0.25rem #9b0281;
           box-shadow: 0 0 0.25rem #9b0281;
   z-index: 500;
-  -webkit-transition: 200ms all ease-in-out;
-  transition: 200ms all ease-in-out;
+  -webkit-transition: 100ms all ease-in-out;
+  transition: 100ms all ease-in-out;
 }
 
 .return-to-top__icon:hover {
@@ -335,6 +340,11 @@ body {
   padding: 2rem;
   background-color: rgba(0, 0, 0, 0.4);
   border-radius: 3px;
+}
+
+.projects__list--description ul {
+  list-style: none;
+  padding: 0;
 }
 
 .projects__list--photo-credit {

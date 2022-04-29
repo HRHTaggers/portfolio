@@ -27,6 +27,7 @@
 }
 
 .btn-secondary {
+    display: inline-block;
     padding: 0.5rem 1rem;
     border-radius: 3px;
     background: linear-gradient(
@@ -35,7 +36,7 @@
         rgba($color-secondary, 0.7));
     box-shadow: 0 1rem 2rem rgba(black, 0.2);
     text-align: center;
-    transition: 500ms all ease-in-out;
+    transition: 200ms all ease-in-out;
 
         &,
         &:link,
