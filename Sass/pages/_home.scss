@@ -1,0 +1,34 @@
+.projects {
+    background: linear-gradient(to bottom right, rgba($color-secondary,0.95), rgba(#001e22, 0.95)), url(/img/hero-background.jpg);
+    background-position: bottom;
+
+    &__list {
+    
+        &--image {
+            padding: 2rem;
+            background-color: rgba(black, 0.4);
+            border-radius: 3px;
+        }
+
+        &--description {
+            padding: 2rem;
+            background-color: rgba(black, 0.4);
+            border-radius: 3px;
+        }
+
+        &--photo-credit {
+            padding-top: 1rem;
+            font-size: 0.5rem;
+        }
+
+        &--photo-credit a {
+            color: aliceblue;
+            text-decoration: none;
+            transition: 200ms all ease-in-out;
+
+            &:hover {
+                color: $color-accent-secondary;
+            }
+        }
+    }
+}

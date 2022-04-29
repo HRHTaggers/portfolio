@@ -30,6 +30,99 @@ body {
   letter-spacing: 0.1rem;
 }
 
+.row {
+  padding: 2rem;
+}
+
+.u-margin-bottom-small {
+  margin-bottom: 1rem;
+}
+
+.u-margin-bottom-medium {
+  margin-bottom: 2rem;
+}
+
+.btn-primary {
+  padding: 0.5rem 1rem;
+  border-radius: 3px;
+  background: -webkit-gradient(linear, left top, right bottom, from(rgba(155, 2, 129, 0.7)), to(rgba(114, 1, 93, 0.7)));
+  background: linear-gradient(to right bottom, rgba(155, 2, 129, 0.7), rgba(114, 1, 93, 0.7));
+  -webkit-box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+          box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+  text-align: center;
+  -webkit-transition: 200ms all ease-in-out;
+  transition: 200ms all ease-in-out;
+}
+
+.btn-primary, .btn-primary:link, .btn-primary:visited {
+  color: white;
+  text-decoration: none;
+}
+
+.btn-primary:hover {
+  background: -webkit-gradient(linear, left top, right bottom, from(rgba(155, 2, 129, 0.8)), to(rgba(114, 1, 93, 0.8)));
+  background: linear-gradient(to right bottom, rgba(155, 2, 129, 0.8), rgba(114, 1, 93, 0.8));
+  -webkit-transform: translateY(1px);
+          transform: translateY(1px);
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.btn-secondary {
+  padding: 0.5rem 1rem;
+  border-radius: 3px;
+  background: -webkit-gradient(linear, left top, right bottom, from(rgba(1, 150, 152, 0.7)), to(rgba(2, 92, 103, 0.7)));
+  background: linear-gradient(to right bottom, rgba(1, 150, 152, 0.7), rgba(2, 92, 103, 0.7));
+  -webkit-box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+          box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+  text-align: center;
+  -webkit-transition: 500ms all ease-in-out;
+  transition: 500ms all ease-in-out;
+}
+
+.btn-secondary, .btn-secondary:link, .btn-secondary:visited {
+  color: white;
+  text-decoration: none;
+}
+
+.btn-secondary:hover {
+  background: -webkit-gradient(linear, left top, right bottom, from(rgba(1, 150, 152, 0.9)), to(rgba(2, 92, 103, 0.9)));
+  background: linear-gradient(to right bottom, rgba(1, 150, 152, 0.9), rgba(2, 92, 103, 0.9));
+  -webkit-transform: translateY(1px);
+          transform: translateY(1px);
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.return-to-top {
+  position: relative;
+}
+
+.return-to-top__icon {
+  position: fixed;
+  bottom: 4.5rem;
+  right: 4.5rem;
+  height: 4rem;
+  width: 4rem;
+  font-size: 2.5rem;
+  font-weight: 500;
+  text-align: center;
+  color: aliceblue;
+  text-decoration: none;
+  background: radial-gradient(rgba(155, 2, 129, 0.8), rgba(114, 1, 93, 0.7));
+  border-radius: 50px;
+  -webkit-box-shadow: 0 0 0.25rem #9b0281;
+          box-shadow: 0 0 0.25rem #9b0281;
+  z-index: 500;
+  -webkit-transition: 200ms all ease-in-out;
+  transition: 200ms all ease-in-out;
+}
+
+.return-to-top__icon:hover {
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+}
+
 .header {
   position: relative;
 }
@@ -68,58 +161,12 @@ body {
   position: absolute;
   top: 20rem;
   left: 8rem;
-  padding: 0.5rem 1rem;
-  border-radius: 3px;
-  background: -webkit-gradient(linear, left top, right bottom, from(rgba(155, 2, 129, 0.7)), to(rgba(114, 1, 93, 0.7)));
-  background: linear-gradient(to right bottom, rgba(155, 2, 129, 0.7), rgba(114, 1, 93, 0.7));
-  -webkit-box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
-          box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
-  text-align: center;
-  -webkit-transition: 200ms all ease-in-out;
-  transition: 200ms all ease-in-out;
-}
-
-.header__buttons--about, .header__buttons--about:link, .header__buttons--about:visited {
-  color: white;
-  text-decoration: none;
-}
-
-.header__buttons--about:hover {
-  background: -webkit-gradient(linear, left top, right bottom, from(rgba(155, 2, 129, 0.8)), to(rgba(114, 1, 93, 0.8)));
-  background: linear-gradient(to right bottom, rgba(155, 2, 129, 0.8), rgba(114, 1, 93, 0.8));
-  -webkit-transform: translateY(1px);
-          transform: translateY(1px);
-  -webkit-box-shadow: none;
-          box-shadow: none;
 }
 
 .header__buttons--contact {
   position: absolute;
   top: 20rem;
   left: 17rem;
-  padding: 0.5rem 1rem;
-  border-radius: 3px;
-  background: -webkit-gradient(linear, left top, right bottom, from(rgba(155, 2, 129, 0.7)), to(rgba(114, 1, 93, 0.7)));
-  background: linear-gradient(to right bottom, rgba(155, 2, 129, 0.7), rgba(114, 1, 93, 0.7));
-  -webkit-box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
-          box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
-  text-align: center;
-  -webkit-transition: 200ms all ease-in-out;
-  transition: 200ms all ease-in-out;
-}
-
-.header__buttons--contact, .header__buttons--contact:link, .header__buttons--contact:visited {
-  color: white;
-  text-decoration: none;
-}
-
-.header__buttons--contact:hover {
-  background: -webkit-gradient(linear, left top, right bottom, from(rgba(155, 2, 129, 0.8)), to(rgba(114, 1, 93, 0.8)));
-  background: linear-gradient(to right bottom, rgba(155, 2, 129, 0.8), rgba(114, 1, 93, 0.8));
-  -webkit-transform: translateY(1px);
-          transform: translateY(1px);
-  -webkit-box-shadow: none;
-          box-shadow: none;
 }
 
 .navigation__checkbox {
@@ -270,5 +317,39 @@ body {
   top: 0;
   -webkit-transform: rotate(-135deg);
           transform: rotate(-135deg);
+}
+
+.projects {
+  background: -webkit-gradient(linear, left top, right bottom, from(rgba(2, 92, 103, 0.95)), to(rgba(0, 30, 34, 0.95))), url(/img/hero-background.jpg);
+  background: linear-gradient(to bottom right, rgba(2, 92, 103, 0.95), rgba(0, 30, 34, 0.95)), url(/img/hero-background.jpg);
+  background-position: bottom;
+}
+
+.projects__list--image {
+  padding: 2rem;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 3px;
+}
+
+.projects__list--description {
+  padding: 2rem;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 3px;
+}
+
+.projects__list--photo-credit {
+  padding-top: 1rem;
+  font-size: 0.5rem;
+}
+
+.projects__list--photo-credit a {
+  color: aliceblue;
+  text-decoration: none;
+  -webkit-transition: 200ms all ease-in-out;
+  transition: 200ms all ease-in-out;
+}
+
+.projects__list--photo-credit a:hover {
+  color: #9B0281;
 }
 /*# sourceMappingURL=main.css.map */
