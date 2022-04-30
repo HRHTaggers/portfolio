@@ -1,3 +1,78 @@
+@-webkit-keyframes zoomFadeIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(5rem) scale(0.2);
+            transform: translateY(5rem) scale(0.2);
+  }
+  90% {
+    -webkit-transform: scale(1.03);
+            transform: scale(1.03);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes zoomFadeIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(5rem) scale(0.2);
+            transform: translateY(5rem) scale(0.2);
+  }
+  90% {
+    -webkit-transform: scale(1.03);
+            transform: scale(1.03);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@-webkit-keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(5rem);
+            transform: translateY(5rem);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+}
+
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(5rem);
+            transform: translateY(5rem);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+}
+
+.reveal {
+  position: relative;
+  -webkit-transform: translateY(2rem);
+          transform: translateY(2rem);
+  opacity: 0;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+
+.reveal.active {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  opacity: 1;
+}
+
 *,
 *::after,
 *::before {
@@ -40,6 +115,10 @@ body {
 
 .u-margin-bottom-medium {
   margin-bottom: 2rem;
+}
+
+.u-margin-top-medium {
+  margin-top: 2rem;
 }
 
 .u-text-align-right {
@@ -128,6 +207,62 @@ body {
           transform: scale(1.03);
 }
 
+.footer {
+  background-color: #002D33;
+}
+
+.footer__contact-methods {
+  padding: 2rem;
+  font-size: 2rem;
+}
+
+.footer__contact-methods--contact-method-logo {
+  -webkit-transition: 500ms all ease-in-out;
+  transition: 500ms all ease-in-out;
+}
+
+.footer__contact-methods--contact-method-logo, .footer__contact-methods--contact-method-logo:active, .footer__contact-methods--contact-method-logo:visited {
+  color: aliceblue;
+}
+
+.footer__contact-methods--contact-method-logo:hover {
+  color: #019698;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.footer__logo--icon {
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  max-width: 3rem;
+  -webkit-perspective: 10rem;
+          perspective: 10rem;
+  -webkit-transition: 200ms all ease-in-out;
+  transition: 200ms all ease-in-out;
+}
+
+.footer__logo--icon:hover {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.footer__website-link {
+  text-align: center;
+  padding: 0 0 2rem 0;
+}
+
+.footer__website-link--link {
+  color: #DAF6F9;
+  text-decoration: none;
+  -webkit-transition: 200ms all ease-in-out;
+  transition: 200ms all ease-in-out;
+}
+
+.footer__website-link--link:hover {
+  color: #019698;
+}
+
 .header {
   position: relative;
 }
@@ -150,6 +285,8 @@ body {
   font-weight: 500;
   letter-spacing: 1rem;
   font-size: 4rem;
+  -webkit-animation: zoomFadeIn 1s ease-in-out;
+          animation: zoomFadeIn 1s ease-in-out;
 }
 
 .header__heading-secondary {
@@ -160,6 +297,13 @@ body {
   font-size: 2rem;
   font-weight: 200;
   letter-spacing: 0.35rem;
+  -webkit-animation: zoomFadeIn 1s ease-in-out;
+          animation: zoomFadeIn 1s ease-in-out;
+}
+
+.header__buttons {
+  -webkit-animation: moveInBottom 1s ease-in-out;
+          animation: moveInBottom 1s ease-in-out;
 }
 
 .header__buttons--about {
@@ -330,19 +474,13 @@ body {
   background-position: bottom;
 }
 
-.projects__list--image {
+.projects__list--description, .projects__list--image {
   padding: 2rem;
   background-color: rgba(0, 0, 0, 0.4);
   border-radius: 3px;
 }
 
-.projects__list--description {
-  padding: 2rem;
-  background-color: rgba(0, 0, 0, 0.4);
-  border-radius: 3px;
-}
-
-.projects__list--description ul {
+.projects__list--description ul, .projects__list--image ul {
   list-style: none;
   padding: 0;
 }

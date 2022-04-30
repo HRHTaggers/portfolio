@@ -1,0 +1,52 @@
+.footer {
+    background-color: $color-tertiary;
+
+    &__contact-methods {
+        padding: 2rem;
+        font-size: 2rem;
+        
+        &--contact-method-logo {
+            transition: 500ms all ease-in-out;
+        
+            &,
+            &:active,
+            &:visited {
+                color: aliceblue;
+            }
+
+            &:hover {
+                color: $color-primary;
+                transform: rotateY(180deg);
+            }
+        }
+    }
+
+    &__logo--icon {
+        display: block;
+        position: relative;
+        margin: 0 auto;
+        max-width: 3rem;
+        perspective: 10rem;
+        transition: 200ms all ease-in-out;
+
+        &:hover {
+            transform: rotateY(180deg);
+        }
+    }
+
+    &__website-link {
+        text-align: center;
+        padding: 0 0 2rem 0;
+
+        &--link {
+        color: $color-text-light;
+        text-decoration: none;
+        transition: 200ms all ease-in-out;
+
+            &:hover {
+                color: $color-primary;
+            }
+        }
+    }
+}
+    

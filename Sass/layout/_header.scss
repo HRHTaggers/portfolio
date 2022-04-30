@@ -1,7 +1,6 @@
 .header {
     position: relative;
 
-
     &__background {
         background: linear-gradient(
             to right bottom, 
@@ -22,6 +21,7 @@
         font-weight: 500;
         letter-spacing: 1rem;
         font-size: 4rem;
+        animation: zoomFadeIn 1s ease-in-out;
     }
 
     &__heading-secondary {
@@ -32,9 +32,11 @@
         font-size: 2rem;
         font-weight: 200;
         letter-spacing: 0.35rem;
+        animation: zoomFadeIn 1s ease-in-out;
     }
 
     &__buttons {
+        animation: moveInBottom 1s ease-in-out;
         
         &--about {
             position: absolute;

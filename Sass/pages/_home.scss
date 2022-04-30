@@ -3,14 +3,9 @@
     background-position: bottom;
 
     &__list {
-    
-        &--image {
-            padding: 2rem;
-            background-color: rgba(black, 0.4);
-            border-radius: 3px;
-        }
 
-        &--description {
+        &--description,
+        &--image {
             padding: 2rem;
             background-color: rgba(black, 0.4);
             border-radius: 3px;
