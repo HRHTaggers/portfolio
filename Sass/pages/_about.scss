@@ -1,0 +1,38 @@
+.about {
+  background: linear-gradient(
+      to bottom right,
+      rgba(#114273, 0.95),
+      rgba(#14314b, 0.95)
+    ),
+    url(/img/hero-background.jpg);
+  background-position: bottom;
+
+  & p {
+      padding: 0rem 3rem;
+    
+      &:first-child {
+          padding-top: 2rem;
+      }
+
+      &:last-child {
+          padding-bottom: 2rem;
+      }
+  }
+
+  & ul {
+    display: block;
+    text-align: center;
+
+    & li {
+        display: inline-block;
+        padding: 2rem;
+        text-align: center;
+        list-style: none;
+    } 
+  }
+
+  &__content--contact-button {
+      padding: 1rem 0rem 2rem 0rem;
+  }
+
+}
