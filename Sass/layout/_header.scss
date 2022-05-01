@@ -1,7 +1,7 @@
 .header {
     position: relative;
 
-    &__background {
+    &__background-primary {
         background: linear-gradient(
             to right bottom, 
             rgba($color-primary, 0.6), 
@@ -11,6 +11,30 @@
         background-position: center;
         transform: rotateZ(180deg);
         height: 90vh;  
+    }
+
+    &__background-secondary {
+        background: linear-gradient(
+            to right bottom, 
+            rgba(#012c53, 0.5), 
+            rgba($color-accent-secondary, 0.6)),
+            url(/img/hero-background.jpg);
+        background-size: cover;
+        background-position: center;
+        transform: rotateZ(180deg);
+        height: 60vh;  
+    }
+
+    &__background-tertiary {
+        background: linear-gradient(
+            to right bottom, 
+            rgba(#410136, 0.7), 
+            rgba($color-primary, 0.6)),
+            url(/img/hero-background.jpg);
+        background-size: cover;
+        background-position: center;
+        transform: rotateZ(180deg);
+        height: 60vh;  
     }
 
     &__heading-primary {

@@ -1,7 +1,12 @@
 .footer {
     background-color: $color-tertiary;
 
-    &__contact-methods {
+    &__background-secondary {
+        background-color: #14314b;
+    }
+
+    &__contact-methods,
+    &__contact-methods-secondary {
         padding: 2rem;
         font-size: 2rem;
         
@@ -13,11 +18,18 @@
             &:visited {
                 color: aliceblue;
             }
+        }
+    }
 
-            &:hover {
-                color: $color-primary;
-                transform: rotateY(180deg);
-            }
+    &__contact-methods--contact-method {
+        &:hover {
+            color: $color-primary;
+        }
+    }
+    
+    &__contact-methods--contact-method-secondary {
+        &:hover {
+            color: $color-accent-secondary;
         }
     }
 

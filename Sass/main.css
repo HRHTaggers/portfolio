@@ -105,6 +105,26 @@ body {
   letter-spacing: 0.1rem;
 }
 
+.subsection-heading-secondary {
+  display: block;
+  padding: 1rem 0;
+  background-color: #012242;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 300;
+  letter-spacing: 0.1rem;
+}
+
+.subsection-heading-tertiary {
+  display: block;
+  padding: 1rem 0;
+  background-color: #291233;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 300;
+  letter-spacing: 0.1rem;
+}
+
 .row {
   padding: 2rem;
 }
@@ -123,6 +143,10 @@ body {
 
 .u-text-align-right {
   text-align: right;
+}
+
+.u-btn-margin {
+  margin: 3rem;
 }
 
 .btn-primary {
@@ -211,24 +235,30 @@ body {
   background-color: #002D33;
 }
 
-.footer__contact-methods {
+.footer__background-secondary {
+  background-color: #14314b;
+}
+
+.footer__contact-methods, .footer__contact-methods-secondary {
   padding: 2rem;
   font-size: 2rem;
 }
 
-.footer__contact-methods--contact-method-logo {
+.footer__contact-methods--contact-method-logo, .footer__contact-methods-secondary--contact-method-logo {
   -webkit-transition: 500ms all ease-in-out;
   transition: 500ms all ease-in-out;
 }
 
-.footer__contact-methods--contact-method-logo, .footer__contact-methods--contact-method-logo:active, .footer__contact-methods--contact-method-logo:visited {
+.footer__contact-methods--contact-method-logo, .footer__contact-methods--contact-method-logo:active, .footer__contact-methods--contact-method-logo:visited, .footer__contact-methods-secondary--contact-method-logo, .footer__contact-methods-secondary--contact-method-logo:active, .footer__contact-methods-secondary--contact-method-logo:visited {
   color: aliceblue;
 }
 
-.footer__contact-methods--contact-method-logo:hover {
+.footer__contact-methods--contact-method:hover {
   color: #019698;
-  -webkit-transform: rotateY(180deg);
-          transform: rotateY(180deg);
+}
+
+.footer__contact-methods--contact-method-secondary:hover {
+  color: #9B0281;
 }
 
 .footer__logo--icon {
@@ -267,7 +297,7 @@ body {
   position: relative;
 }
 
-.header__background {
+.header__background-primary {
   background: -webkit-gradient(linear, left top, right bottom, from(rgba(1, 150, 152, 0.6)), to(rgba(0, 45, 51, 0.5))), url(/img/hero-background.jpg);
   background: linear-gradient(to right bottom, rgba(1, 150, 152, 0.6), rgba(0, 45, 51, 0.5)), url(/img/hero-background.jpg);
   background-size: cover;
@@ -275,6 +305,26 @@ body {
   -webkit-transform: rotateZ(180deg);
           transform: rotateZ(180deg);
   height: 90vh;
+}
+
+.header__background-secondary {
+  background: -webkit-gradient(linear, left top, right bottom, from(rgba(1, 44, 83, 0.5)), to(rgba(155, 2, 129, 0.6))), url(/img/hero-background.jpg);
+  background: linear-gradient(to right bottom, rgba(1, 44, 83, 0.5), rgba(155, 2, 129, 0.6)), url(/img/hero-background.jpg);
+  background-size: cover;
+  background-position: center;
+  -webkit-transform: rotateZ(180deg);
+          transform: rotateZ(180deg);
+  height: 60vh;
+}
+
+.header__background-tertiary {
+  background: -webkit-gradient(linear, left top, right bottom, from(rgba(65, 1, 54, 0.7)), to(rgba(1, 150, 152, 0.6))), url(/img/hero-background.jpg);
+  background: linear-gradient(to right bottom, rgba(65, 1, 54, 0.7), rgba(1, 150, 152, 0.6)), url(/img/hero-background.jpg);
+  background-size: cover;
+  background-position: center;
+  -webkit-transform: rotateZ(180deg);
+          transform: rotateZ(180deg);
+  height: 60vh;
 }
 
 .header__heading-primary {
@@ -342,6 +392,7 @@ body {
 .navigation__button:hover {
   -webkit-transform: translateY(1px);
           transform: translateY(1px);
+  background: radial-gradient(#daf6f9, rgba(218, 246, 249, 0.4));
 }
 
 .navigation__background {
@@ -351,7 +402,7 @@ body {
   position: fixed;
   top: 4.5rem;
   right: 4.5rem;
-  background-image: radial-gradient(#002D33 20%, #DAF6F9 80%);
+  background-image: radial-gradient(#002D33 20%, #9B0281 80%);
   z-index: 1000;
   -webkit-box-shadow: 0 1rem 3rem rgba(1, 14, 20, 0.1);
           box-shadow: 0 1rem 3rem rgba(1, 14, 20, 0.1);
@@ -468,6 +519,40 @@ body {
           transform: rotate(-135deg);
 }
 
+.about {
+  background: -webkit-gradient(linear, left top, right bottom, from(rgba(17, 66, 115, 0.95)), to(rgba(20, 49, 75, 0.95))), url(/img/hero-background.jpg);
+  background: linear-gradient(to bottom right, rgba(17, 66, 115, 0.95), rgba(20, 49, 75, 0.95)), url(/img/hero-background.jpg);
+  background-position: bottom;
+}
+
+.about p {
+  padding: 0rem 3rem;
+}
+
+.about p:first-child {
+  padding-top: 2rem;
+}
+
+.about p:last-child {
+  padding-bottom: 2rem;
+}
+
+.about ul {
+  display: block;
+  text-align: center;
+}
+
+.about ul li {
+  display: inline-block;
+  padding: 2rem;
+  text-align: center;
+  list-style: none;
+}
+
+.about__content--contact-button {
+  padding: 1rem 0rem 2rem 0rem;
+}
+
 .projects {
   background: -webkit-gradient(linear, left top, right bottom, from(rgba(2, 92, 103, 0.95)), to(rgba(0, 30, 34, 0.95))), url(/img/hero-background.jpg);
   background: linear-gradient(to bottom right, rgba(2, 92, 103, 0.95), rgba(0, 30, 34, 0.95)), url(/img/hero-background.jpg);
@@ -499,5 +584,11 @@ body {
 
 .projects__list--photo-credit a:hover {
   color: #9B0281;
+}
+
+.portfolio {
+  background: -webkit-gradient(linear, left top, right bottom, from(rgba(2, 92, 103, 0.95)), to(rgba(0, 30, 34, 0.95))), url(/img/hero-background.jpg);
+  background: linear-gradient(to bottom right, rgba(2, 92, 103, 0.95), rgba(0, 30, 34, 0.95)), url(/img/hero-background.jpg);
+  background-position: bottom;
 }
 /*# sourceMappingURL=main.css.map */
