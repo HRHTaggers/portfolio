@@ -1,9 +1,48 @@
 .portfolio {
-    background: linear-gradient(
+  background: linear-gradient(
       to bottom right,
       rgba($color-secondary, 0.95),
       rgba(#001e22, 0.95)
     ),
     url(/img/hero-background.jpg);
   background-position: bottom;
+  position: relative;
+
+  &__row {
+    position: relative;
+  
+    &--image {
+      padding: 0.5rem 1rem;
+      transition: 300ms all ease-in-out;
+
+      &:hover {
+        transform: scale(1.03);
+      }
+
+      &:hover & img {
+        background-color: rgba($color-tertiary, 0.2);
+      }
+    }
+
+    &--figure {
+      padding: 0.5rem;
+      backface-visibility: hidden;
+      overflow: hidden;
+      border-radius: 4px;
+
+      &:hover {
+        background-color: rgba(black, 0.6);
+        z-index: 50;
+      }
+    }
+
+    &--caption {
+      padding: 5px 10px;
+    }
+
+    &:hover &--image:not(:hover) {
+        transform: scale(0.97);
+        filter: brightness(80%);
+    }
+  }
 }
