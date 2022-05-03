@@ -2,7 +2,7 @@
   background: linear-gradient(
       to bottom right,
       rgba($color-secondary, 0.95),
-      rgba(#001e22, 0.95)
+      rgba($color-tertiary, 0.95)
     ),
     url(/img/hero-background.jpg);
   background-position: bottom;
@@ -11,7 +11,7 @@
     &--description,
     &--image {
       padding: 2rem;
-      background-color: rgba(black, 0.4);
+      background-color: rgba($color-tertiary, 0.9);
       border-radius: 3px;
 
       & ul {
@@ -26,12 +26,12 @@
     }
 
     &--photo-credit a {
-      color: aliceblue;
+      color: $color-text-light;
       text-decoration: none;
-      transition: 200ms all ease-in-out;
+      transition: $default-transition;
 
       &:hover {
-        color: $color-accent-secondary-medium;
+        color: $color-primary;
       }
     }
   }

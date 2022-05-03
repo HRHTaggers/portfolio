@@ -4,7 +4,8 @@
 $color-primary: #019698;
 $color-secondary: #025C67;
 $color-tertiary: #002D33;
-$color-accent-primary: #013567;
+$color-accent-primary-light: #013567;
+$color-accent-primary-dark: #012242;
 $color-accent-secondary-light: #9B0281;
 $color-accent-secondary-medium: #72015D;
 
@@ -16,3 +17,10 @@ $color-text-dark: #010E14;
 $default-font-size: 1.6rem;
 $font-size-small: 0.8rem;
 $font-size-large: 2rem;
+
+//BOX-SHADOW
+$default-box-shadow: 0 1rem 2rem rgba(black, 0.2);
+$halo-box-shadow: 0 0 0.5rem rgba($color-text-light, 1);
+
+//TRANSITIONS
+$default-transition: 300ms all ease-in-out;

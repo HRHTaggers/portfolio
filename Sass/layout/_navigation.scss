@@ -8,7 +8,7 @@
       rgba($color-accent-secondary-medium, 0.8),
       rgba($color-accent-secondary-light, 0.2)
     );
-    box-shadow: 0 0 0.5rem rgba($color-text-light, 1);
+    box-shadow: $halo-box-shadow;
     height: 4rem;
     width: 4rem;
     position: fixed;
@@ -17,7 +17,7 @@
     border-radius: 50%;
     z-index: 2000;
     text-align: center;
-    transition: 200ms all ease-in-out;
+    transition: $default-transition;
     cursor: pointer;
 
     &:hover {
@@ -120,7 +120,7 @@
       content: "";
       position: absolute;
       left: 0;
-      transition: 200ms all ease-in-out;
+      transition: $default-transition;
     }
 
     &::before {

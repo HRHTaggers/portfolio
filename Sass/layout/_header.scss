@@ -16,7 +16,7 @@
     &__background-secondary {
         background: linear-gradient(
             to right bottom, 
-            rgba(#012c53, 0.5), 
+            rgba($color-accent-primary-dark, 0.5), 
             rgba($color-accent-secondary-medium, 0.6)),
             url(/img/hero-background.jpg);
         background-size: cover;

@@ -2,7 +2,7 @@
   background: linear-gradient(
       to bottom right,
       rgba($color-secondary, 0.95),
-      rgba(#001e22, 0.95)
+      rgba($color-tertiary, 0.95)
     ),
     url(/img/hero-background.jpg);
   background-position: bottom;
@@ -13,14 +13,14 @@
   
     &--image {
       padding: 0.5rem 1rem;
-      transition: 300ms all ease-in-out;
+      transition: $default-transition;
 
       &:hover {
         transform: scale(1.03);
       }
 
       &:hover & img {
-        background-color: rgba($color-tertiary, 0.2);
+        background-color: rgba(black, 0.2);
       }
     }
 
@@ -31,8 +31,7 @@
       border-radius: 4px;
 
       &:hover {
-        background-color: rgba(black, 0.6);
-        z-index: 50;
+        background-color: rgba(black, 0.5);
       }
     }
 
@@ -42,7 +41,7 @@
 
     &:hover &--image:not(:hover) {
         transform: scale(0.97);
-        filter: brightness(80%);
+        filter: contrast(70%);
     }
   }
 }

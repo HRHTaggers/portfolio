@@ -11,12 +11,12 @@
         font-size: 2rem;
         
         &--contact-method-logo-primary {
-            transition: 300ms all ease-in-out;
+            transition: $default-transition;
         
             &,
             &:active,
             &:visited {
-                color: aliceblue;
+                color: $color-text-light;
             }
 
             &:hover {
@@ -25,12 +25,12 @@
         }
 
         &--contact-method-logo-secondary {
-            transition: 300ms all ease-in-out;
+            transition: $default-transition;
         
             &,
             &:active,
             &:visited {
-                color: aliceblue;
+                color: $color-text-light;
             }
 
             &:hover {
@@ -45,7 +45,7 @@
         margin: 0 auto;
         max-width: 3rem;
         perspective: 10rem;
-        transition: 200ms all ease-in-out;
+        transition: $default-transition;
 
         &:hover {
             transform: rotateY(180deg);
@@ -61,7 +61,7 @@
         text-align: center;
         color: $color-text-light;
         text-decoration: none;
-        transition: 200ms all ease-in-out;
+        transition: $default-transition;
         }
     }
 
@@ -77,5 +77,3 @@
         }
     }
 }
-
-    

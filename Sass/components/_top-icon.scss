@@ -10,13 +10,13 @@
     font-size: 2.5rem;
     font-weight: 500;
     text-align: center;
-    color: aliceblue;
+    color: $color-text-light;
     text-decoration: none;
     background: radial-gradient(rgba($color-accent-secondary-medium, 0.8), rgba($color-accent-secondary-medium, 0.7));
     border-radius: 50px;
-    box-shadow: 0 0 0.5rem rgba($color-text-light, 1);
+    box-shadow: $halo-box-shadow;
     z-index: 500;
-    transition: 100ms all ease-in-out;
+    transition: $default-transition;
     
         &:hover {
             transform: scale(1.03);

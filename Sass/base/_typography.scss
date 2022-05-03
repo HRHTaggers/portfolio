@@ -11,17 +11,7 @@
 .subsection-heading-secondary {
     display: block;
     padding: 1rem 0;
-    background-color: #012242;
-    text-align: center;
-    font-size: 1.5rem;
-    font-weight: 300;
-    letter-spacing: 0.1rem;
-}
-
-.subsection-heading-tertiary {
-    display: block;
-    padding: 1rem 0;
-    background-color: #291233;
+    background-color: $color-accent-primary-dark;
     text-align: center;
     font-size: 1.5rem;
     font-weight: 300;

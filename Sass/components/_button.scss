@@ -5,14 +5,14 @@
         to right bottom, 
         rgba($color-accent-secondary-light, 0.7), 
         rgba($color-accent-secondary-medium, 0.7));
-    box-shadow: 0 1rem 2rem rgba(black, 0.2);
+    box-shadow: $default-box-shadow;
     text-align: center;
-    transition: 200ms all ease-in-out;
+    transition: $default-transition;
 
     &,
     &:link,
     &:visited {
-        color: white;
+        color: $color-text-light;
         text-decoration: none;
     }
 
@@ -34,14 +34,14 @@
         to right bottom, 
         rgba($color-primary, 0.7), 
         rgba($color-secondary, 0.7));
-    box-shadow: 0 1rem 2rem rgba(black, 0.2);
+    box-shadow: $default-box-shadow;
     text-align: center;
-    transition: 200ms all ease-in-out;
+    transition: $default-transition;
 
         &,
         &:link,
         &:visited {
-            color: white;
+            color: $color-text-light;
             text-decoration: none;
         }
 
