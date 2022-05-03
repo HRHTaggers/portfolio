@@ -244,21 +244,30 @@ body {
   font-size: 2rem;
 }
 
-.footer__contact-methods--contact-method-logo, .footer__contact-methods-secondary--contact-method-logo {
-  -webkit-transition: 500ms all ease-in-out;
-  transition: 500ms all ease-in-out;
+.footer__contact-methods--contact-method-logo-primary, .footer__contact-methods-secondary--contact-method-logo-primary {
+  -webkit-transition: 300ms all ease-in-out;
+  transition: 300ms all ease-in-out;
 }
 
-.footer__contact-methods--contact-method-logo, .footer__contact-methods--contact-method-logo:active, .footer__contact-methods--contact-method-logo:visited, .footer__contact-methods-secondary--contact-method-logo, .footer__contact-methods-secondary--contact-method-logo:active, .footer__contact-methods-secondary--contact-method-logo:visited {
+.footer__contact-methods--contact-method-logo-primary, .footer__contact-methods--contact-method-logo-primary:active, .footer__contact-methods--contact-method-logo-primary:visited, .footer__contact-methods-secondary--contact-method-logo-primary, .footer__contact-methods-secondary--contact-method-logo-primary:active, .footer__contact-methods-secondary--contact-method-logo-primary:visited {
   color: aliceblue;
 }
 
-.footer__contact-methods--contact-method:hover {
+.footer__contact-methods--contact-method-logo-primary:hover, .footer__contact-methods-secondary--contact-method-logo-primary:hover {
   color: #019698;
 }
 
-.footer__contact-methods--contact-method-secondary:hover {
-  color: #72015D;
+.footer__contact-methods--contact-method-logo-secondary, .footer__contact-methods-secondary--contact-method-logo-secondary {
+  -webkit-transition: 300ms all ease-in-out;
+  transition: 300ms all ease-in-out;
+}
+
+.footer__contact-methods--contact-method-logo-secondary, .footer__contact-methods--contact-method-logo-secondary:active, .footer__contact-methods--contact-method-logo-secondary:visited, .footer__contact-methods-secondary--contact-method-logo-secondary, .footer__contact-methods-secondary--contact-method-logo-secondary:active, .footer__contact-methods-secondary--contact-method-logo-secondary:visited {
+  color: aliceblue;
+}
+
+.footer__contact-methods--contact-method-logo-secondary:hover, .footer__contact-methods-secondary--contact-method-logo-secondary:hover {
+  color: #9B0281;
 }
 
 .footer__logo--icon {
@@ -277,20 +286,22 @@ body {
           transform: rotateY(180deg);
 }
 
-.footer__website-link {
+.footer__website-link-primary--link, .footer__website-link-secondary--link {
+  display: block;
+  padding-bottom: 2rem;
   text-align: center;
-  padding: 0 0 2rem 0;
-}
-
-.footer__website-link--link {
   color: #DAF6F9;
   text-decoration: none;
   -webkit-transition: 200ms all ease-in-out;
   transition: 200ms all ease-in-out;
 }
 
-.footer__website-link--link:hover {
+.footer__website-link-primary--link:hover {
   color: #019698;
+}
+
+.footer__website-link-secondary--link:hover {
+  color: #9B0281;
 }
 
 .header {

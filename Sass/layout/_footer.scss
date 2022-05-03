@@ -10,26 +10,32 @@
         padding: 2rem;
         font-size: 2rem;
         
-        &--contact-method-logo {
-            transition: 500ms all ease-in-out;
+        &--contact-method-logo-primary {
+            transition: 300ms all ease-in-out;
         
             &,
             &:active,
             &:visited {
                 color: aliceblue;
             }
-        }
-    }
 
-    &__contact-methods--contact-method {
-        &:hover {
-            color: $color-primary;
+            &:hover {
+                color: $color-primary;
+            }
         }
-    }
-    
-    &__contact-methods--contact-method-secondary {
-        &:hover {
-            color: $color-accent-secondary;
+
+        &--contact-method-logo-secondary {
+            transition: 300ms all ease-in-out;
+        
+            &,
+            &:active,
+            &:visited {
+                color: aliceblue;
+            }
+
+            &:hover {
+                color: $color-accent-secondary-light;
+            }
         }
     }
 
@@ -46,19 +52,30 @@
         }
     }
 
-    &__website-link {
-        text-align: center;
-        padding: 0 0 2rem 0;
+    &__website-link-primary,
+    &__website-link-secondary {
 
         &--link {
+        display: block;
+        padding-bottom: 2rem;
+        text-align: center;
         color: $color-text-light;
         text-decoration: none;
         transition: 200ms all ease-in-out;
+        }
+    }
 
-            &:hover {
-                color: $color-primary;
-            }
+    &__website-link-primary--link {
+        &:hover {
+            color: $color-primary;
+        }
+    }
+
+    &__website-link-secondary--link {
+        &:hover {
+            color: $color-accent-secondary-light;
         }
     }
 }
+
     
