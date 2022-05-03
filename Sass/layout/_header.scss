@@ -17,27 +17,27 @@
         background: linear-gradient(
             to right bottom, 
             rgba(#012c53, 0.5), 
-            rgba($color-accent-secondary, 0.6)),
+            rgba($color-accent-secondary-medium, 0.6)),
             url(/img/hero-background.jpg);
         background-size: cover;
         background-position: center;
         transform: rotateZ(180deg);
-        height: 60vh;  
+        height: 45vh;  
     }
 
     &__background-tertiary {
         background: linear-gradient(
             to right bottom, 
-            rgba(#410136, 0.7), 
-            rgba($color-primary, 0.6)),
+            rgba($color-primary, 0.6), 
+            rgba($color-tertiary, 0.5)), 
             url(/img/hero-background.jpg);
         background-size: cover;
         background-position: center;
         transform: rotateZ(180deg);
-        height: 60vh;  
+        height: 45vh;  
     }
 
-    &__heading-primary {
+    &__heading-primary-homepage {
         position: absolute;
         top: 10rem;
         left: 8rem;
@@ -48,9 +48,31 @@
         animation: zoomFadeIn 1s ease-in-out;
     }
 
-    &__heading-secondary {
+    &__heading-secondary-homepage {
         position: absolute;
         top: 15.5rem;
+        left: 8rem;
+        font-family: 'Jost', sans-serif;
+        font-size: 2rem;
+        font-weight: 200;
+        letter-spacing: 0.35rem;
+        animation: zoomFadeIn 1s ease-in-out;
+    }
+
+    &__heading-primary {
+        position: absolute;
+        top: 6rem;
+        left: 8rem;
+        font-family: 'Megrim', cursive;
+        font-weight: 500;
+        letter-spacing: 1rem;
+        font-size: 4rem;
+        animation: zoomFadeIn 1s ease-in-out;
+    }
+
+    &__heading-secondary {
+        position: absolute;
+        top: 11rem;
         left: 8rem;
         font-family: 'Jost', sans-serif;
         font-size: 2rem;

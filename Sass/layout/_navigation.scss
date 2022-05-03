@@ -4,7 +4,10 @@
   }
 
   &__button {
-    background: radial-gradient(rgba($color-text-light, 1), rgba($color-text-light, 0.2));
+    background: radial-gradient(
+      rgba($color-accent-secondary-medium, 0.8),
+      rgba($color-accent-secondary-light, 0.2)
+    );
     box-shadow: 0 0 0.5rem rgba($color-text-light, 1);
     height: 4rem;
     width: 4rem;
@@ -18,8 +21,11 @@
     cursor: pointer;
 
     &:hover {
-      transform: translateY(1px);
-      background: radial-gradient(rgba($color-text-light, 1), rgba($color-text-light, 0.4));
+      transform: scale(1.03);
+      background: radial-gradient(
+        rgba($color-accent-secondary-medium, 1),
+        rgba($color-accent-secondary-light, 0.4)
+      );
     }
   }
 
@@ -32,12 +38,11 @@
     right: 4.5rem;
     background-image: radial-gradient(
       $color-tertiary 20%,
-      $color-accent-secondary 80%
+      $color-accent-secondary-medium 95%
     );
     z-index: 1000;
     box-shadow: 0 1rem 3rem rgba($color-text-dark, 0.1);
     transition: transform 800ms cubic-bezier(0.86, 0, 0.07, 1);
-   
   }
 
   &__list {
@@ -76,13 +81,12 @@
       text-decoration: none;
       text-transform: uppercase;
       transition: 400ms all ease-in-out;
-
     }
 
     &:hover,
     &:active {
       background-position: 100%;
-      color: $color-accent-secondary;
+      color: $color-accent-secondary-medium;
       transform: translateY(0.1rem);
     }
   }
@@ -107,7 +111,7 @@
     &::after {
       width: 1.75rem;
       height: 2px;
-      background-color: $color-tertiary;
+      background-color: $color-text-light;
       display: inline-block;
     }
 
