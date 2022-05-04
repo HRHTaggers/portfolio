@@ -9,6 +9,14 @@
 
   & p {
       padding: 0rem 3rem;
+
+      @include respond(tab-port) {
+        padding: 0rem 1.5rem;
+      }
+
+      @include respond(phone) {
+        padding: 0rem 1rem;
+      }
     
       &:first-child {
           padding-top: 2rem;
@@ -27,12 +35,26 @@
         display: inline-block;
         padding: 2rem;
         text-align: center;
-        list-style: none;
+
+        @include list-style;
+
+        @include respond(tab-port) {
+          padding: 0.5rem;
+        }
+
+        @include respond(phone) {
+          padding: 0.5rem;
+        }
     } 
   }
 
   &__content--contact-button {
       padding: 1rem 0rem 2rem 0rem;
+      margin-left: 3rem;
+
+      @include respond(tab-port) {
+        margin-left: 1.5rem;
+      }
   }
 
 }

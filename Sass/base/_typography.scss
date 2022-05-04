@@ -6,6 +6,10 @@
     font-size: 1.5rem;
     font-weight: 300;
     letter-spacing: 0.1rem;
+
+    @include respond(phone) {
+        font-size: 1rem;
+    }
 }
 
 .subsection-heading-secondary {
@@ -16,4 +20,8 @@
     font-size: 1.5rem;
     font-weight: 300;
     letter-spacing: 0.1rem;
+
+    @include respond(phone) {
+        font-size: 1rem;
+    }
 }

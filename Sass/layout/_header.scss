@@ -23,6 +23,14 @@
         background-position: center;
         transform: rotateZ(180deg);
         height: 45vh;  
+
+        @include respond(tab-port) {
+            height: 35vh;
+        }
+
+        @include respond(phone) {
+            height: 35vh;
+        }
     }
 
     &__background-tertiary {
@@ -34,7 +42,15 @@
         background-size: cover;
         background-position: center;
         transform: rotateZ(180deg);
-        height: 45vh;  
+        height: 45vh; 
+        
+        @include respond(tab-port) {
+            height: 35vh;
+        }
+
+        @include respond(phone) {
+            height: 35vh;
+        }
     }
 
     &__heading-primary-homepage {
@@ -46,6 +62,28 @@
         letter-spacing: 1rem;
         font-size: 4rem;
         animation: zoomFadeIn 1s ease-in-out;
+
+        @include respond(small-desk) {
+            left: 4rem;
+        }
+
+        @include respond(tab-land) {
+            top: 6rem;
+            left: 4rem;
+            font-size: 3rem;
+        }
+
+        @include respond(tab-port) {
+            top: 6rem;
+            left: 2rem;
+            font-size: 2.5rem;
+        }
+
+        @include respond(phone) {
+            top: 6rem;
+            left: 2rem;
+            font-size: 2rem;
+        }
     }
 
     &__heading-secondary-homepage {
@@ -57,6 +95,28 @@
         font-weight: 200;
         letter-spacing: 0.35rem;
         animation: zoomFadeIn 1s ease-in-out;
+
+        @include respond(small-desk) {
+            left: 4rem;
+        }
+
+        @include respond(tab-land) {
+            top: 10rem;
+            left: 4rem;
+            font-size: 2rem;
+        }
+
+        @include respond(tab-port) {
+            top: 14rem;
+            left: 2rem;
+            font-size: 1.5rem;
+        }
+
+        @include respond(phone) {
+            top: 13rem;
+            left: 1rem;
+            font-size: 1rem;
+        }
     }
 
     &__heading-primary {
@@ -68,6 +128,24 @@
         letter-spacing: 1rem;
         font-size: 4rem;
         animation: zoomFadeIn 1s ease-in-out;
+
+        @include respond(tab-land) {
+            top: 6rem;
+            left: 4rem;
+            font-size: 3rem;
+        }
+
+        @include respond(tab-port) {
+            top: 6rem;
+            left: 3rem;
+            font-size: 2.5rem;
+        }
+
+        @include respond(phone) {
+            top: 6rem;
+            left: 2rem;
+            font-size: 2rem;
+        }
     }
 
     &__heading-secondary {
@@ -79,6 +157,24 @@
         font-weight: 200;
         letter-spacing: 0.35rem;
         animation: zoomFadeIn 1s ease-in-out;
+
+        @include respond(tab-land) {
+            top: 10rem;
+            left: 4rem;
+            font-size: 2rem;
+        }
+
+        @include respond(tab-port) {
+            top: 10rem;
+            left: 3rem;
+            font-size: 1.25rem;
+        }
+
+        @include respond(phone) {
+            top: 10rem;
+            left: 2rem;
+            font-size: 1.5rem;
+        }
     }
 
     &__buttons {
@@ -88,12 +184,42 @@
             position: absolute;
             top: 20rem;
             left: 8rem;
+
+            @include respond(tab-land) {
+                top: 17rem;
+                left: 4rem;
+            }
+
+            @include respond(tab-port) {
+                top: 20rem;
+                left: 2rem;
+            }
+
+            @include respond(phone) {
+                top: 18rem;
+                left: 2rem;
+            }
         }
 
         &--contact {
             position: absolute;
             top: 20rem;
             left: 17rem;
+
+            @include respond(tab-land) {
+                top: 17rem;
+                left: 13rem;
+            }
+
+            @include respond(tab-port) {
+                top: 20rem;
+                left: 11rem;
+            }
+
+            @include respond(phone) {
+                top: 18rem;
+                left: 11rem;
+            }
         }
     }
 }

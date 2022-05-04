@@ -12,13 +12,19 @@
     height: 4rem;
     width: 4rem;
     position: fixed;
-    top: 4.5rem;
-    right: 4.5rem;
+    top: 5%;
+    right: 5%;
     border-radius: 50%;
     z-index: 2000;
     text-align: center;
     transition: $default-transition;
     cursor: pointer;
+
+    @include respond(phone) {
+      top: 3%;
+      right: 8%;
+    }
+
 
     &:hover {
       transform: scale(1.03);
@@ -34,8 +40,8 @@
     width: 4rem;
     border-radius: 50%;
     position: fixed;
-    top: 4.5rem;
-    right: 4.5rem;
+    top: 5%;
+    right: 5%;
     background-image: radial-gradient(
       $color-tertiary 20%,
       $color-accent-secondary-medium 95%
@@ -43,6 +49,11 @@
     z-index: 1000;
     box-shadow: 0 1rem 3rem rgba($color-text-dark, 0.1);
     transition: transform 800ms cubic-bezier(0.86, 0, 0.07, 1);
+
+    @include respond(phone) {
+      top: 3%;
+      right: 8%;
+    }
   }
 
   &__list {

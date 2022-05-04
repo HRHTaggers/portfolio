@@ -3,8 +3,8 @@
 
     &__icon {
     position: fixed;
-    bottom: 4.5rem;
-    right: 4.5rem;
+    bottom: 5%;
+    right: 5%;
     height: 4rem;
     width: 4rem;
     font-size: 2.5rem;
@@ -17,6 +17,11 @@
     box-shadow: $halo-box-shadow;
     z-index: 500;
     transition: $default-transition;
+
+    @include respond(phone) {
+      bottom: 3%;
+      right: 8%;
+    }
     
         &:hover {
             transform: scale(1.03);
