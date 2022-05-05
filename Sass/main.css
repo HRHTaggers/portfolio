@@ -102,6 +102,16 @@ html {
   }
 }
 
+::-moz-selection {
+  background-color: #DAF6F9;
+  color: #002D33;
+}
+
+::selection {
+  background-color: #DAF6F9;
+  color: #002D33;
+}
+
 body {
   color: #DAF6F9;
   font-family: 'Jost', sans-serif;

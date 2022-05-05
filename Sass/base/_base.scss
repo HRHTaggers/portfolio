@@ -22,6 +22,11 @@ html {
     }
 }
 
+::selection {
+    background-color: $color-text-light;
+    color: $color-tertiary;
+}
+
 body {
     color: $color-text-light;
     font-family: 'Jost', sans-serif;
