@@ -10,7 +10,11 @@
         background-size: cover;
         background-position: center;
         transform: rotateZ(180deg);
-        height: 90vh;  
+        height: 90vh;
+
+        @include respond(phone) {
+            height: 75%;
+        }
     }
 
     &__background-secondary {

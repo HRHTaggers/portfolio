@@ -349,6 +349,12 @@ body {
   height: 90vh;
 }
 
+@media only screen and (max-width: 23.4em) {
+  .header__background-primary {
+    height: 75%;
+  }
+}
+
 .header__background-secondary {
   background: -webkit-gradient(linear, left top, right bottom, from(rgba(1, 34, 66, 0.5)), to(rgba(114, 1, 93, 0.6))), url(/img/hero-background.jpg);
   background: linear-gradient(to right bottom, rgba(1, 34, 66, 0.5), rgba(114, 1, 93, 0.6)), url(/img/hero-background.jpg);
