@@ -92,13 +92,13 @@ html {
 
 @media only screen and (max-width: 35.1em) {
   html {
-    font-size: 80%;
+    font-size: 90%;
   }
 }
 
 @media only screen and (max-width: 23.4em) {
   html {
-    font-size: 70%;
+    font-size: 80%;
   }
 }
 
