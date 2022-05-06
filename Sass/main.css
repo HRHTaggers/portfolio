@@ -477,7 +477,7 @@ body {
 
 @media only screen and (max-width: 23.4em) {
   .header__heading-secondary-homepage {
-    top: 13rem;
+    top: 14rem;
     left: 2rem;
     font-size: 1.5rem;
   }
@@ -582,7 +582,7 @@ body {
 
 @media only screen and (max-width: 23.4em) {
   .header__buttons--about {
-    top: 18rem;
+    top: 19rem;
     left: 2rem;
   }
 }
@@ -609,7 +609,7 @@ body {
 
 @media only screen and (max-width: 23.4em) {
   .header__buttons--contact {
-    top: 18rem;
+    top: 19rem;
     left: 11rem;
   }
 }
