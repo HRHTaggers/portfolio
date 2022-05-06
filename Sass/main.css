@@ -351,7 +351,7 @@ body {
 
 @media only screen and (max-width: 23.4em) {
   .header__background-primary {
-    height: 75%;
+    height: 75vh;
   }
 }
 
