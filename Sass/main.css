@@ -437,7 +437,7 @@ body {
   .header__heading-primary-homepage {
     top: 6rem;
     left: 2rem;
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
 }
 
@@ -478,8 +478,8 @@ body {
 @media only screen and (max-width: 23.4em) {
   .header__heading-secondary-homepage {
     top: 13rem;
-    left: 1rem;
-    font-size: 1rem;
+    left: 2rem;
+    font-size: 1.5rem;
   }
 }
 
