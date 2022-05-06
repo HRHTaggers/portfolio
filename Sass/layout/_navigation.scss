@@ -68,6 +68,10 @@
 
   &__item {
     margin: 1.5rem;
+
+    @include respond(phone) {
+      margin: 0;
+    }
   }
 
   &__nav {
